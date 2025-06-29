@@ -12,19 +12,23 @@
 <body>
 <section class="header">
     <nav>
-        <a href="index.html"><img src="images/logo.png"></a>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        
+        <!-- Tombol hamburger -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="bi bi-list"></i>
+        </button>
+      
         <div class="nav-links" id="navLinks">
-            <i class="" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>   
-        <i class="" onclick="showMenu()"></i>
-    </nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>      
 
 <div class="text-box">
     <h1>Welcome to WitchCrafty!</h1>
@@ -167,6 +171,16 @@
     </div>
     <p>Made with <i class="bi-heart-fill"></i>  by Sarah</p>
 </section>
+
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+  
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+</script>  
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -180,6 +194,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
 </body>
 </html>
-

@@ -11,18 +11,24 @@
 </head>
 <body class="about-page">
 <section class="sub-header">
-    <nav class="about-nav">
-        <a href="index.html"><img src="images/logo.png"></a>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        
+        <!-- Tombol hamburger -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <i class="bi bi-list"></i>
+        </button>
+      
         <div class="nav-links" id="navLinks">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="course.html">Course</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-    </nav>
+      </nav>      
     <h1>Our Courses</h1>
 </section>
 
@@ -89,7 +95,17 @@
     </div>
     <p>Made with <i class="bi-heart-fill"></i>  by Sarah</p>
 </section>
-<!--Start of Tawk.to Script-->
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+  
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+  
+  <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
